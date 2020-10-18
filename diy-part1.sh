@@ -16,8 +16,6 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 git clone https://github.com/Nocker007/xmurp-ua.git package/xmurp-ua
-#
 git clone https://github.com/muink/openwrt-rgmac.git package/rgmac
-#
 git clone https://github.com/muink/luci-app-change-mac.git package/luci-app-change-mac
 
