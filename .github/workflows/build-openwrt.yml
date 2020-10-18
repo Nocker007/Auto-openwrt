@@ -62,6 +62,9 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        
+    - name: Install bash  # 第二步，安装依赖
+      run: sudo -E apt-get install bash
 
     - name: Load custom feeds
       run: |
